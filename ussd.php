@@ -1,9 +1,10 @@
 <?php
 // Start the session
-session_start();
-
+$sessionId = $_POST["sessionId"];
+$serviceCode = $_POST["serviceCode"];
+$phoneNumber = $_POST["phoneNumber"];
 // Get the user's input
-$userInput = $_GET['text'];
+$userInput = $_POST['text'];
 
 // Initialize the response
 $response = "";
